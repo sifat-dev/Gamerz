@@ -22,14 +22,27 @@ a {
     text-decoration: none;
 }
 
-.btn
+.primary-btn{
+    border-style: none;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transform: 0.5s linear;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
 
 
 
 /* Header part css start */
 
 nav {
-    padding: 37px 0;
+    padding: 20px 0;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -148,10 +161,22 @@ font-size: 4.5rem;
     padding: 5px 7px;
     margin-left: -5px;
     color: var(--linear-color);
-    border: 2px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
 }
 .banner-content ul li:nth-child(2) i{
     color: var(--linear-color);
+}
+.banner-btn2{
+    background: #4EC5F7;
+    margin-left: 10px;
+}
+.banner-btn1:hover {
+    background: #4EC5F7;
+    cursor: pointer;
+}
+.banner-btn2:hover {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    cursor: pointer;
 }
 
 
