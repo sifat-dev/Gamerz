@@ -200,6 +200,9 @@ font-size: 4.5rem;
 
 
 /* Gamer part CSS start */
+.gamer-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
 .gamer-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -314,7 +317,37 @@ font-size: 4.5rem;
     transform: scale(1.2);
     cursor: pointer;
 }
+/* online css end */
 
+/* play part css start */
+
+.play-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 120px;
+}
+.play-title{
+    width: 30%;
+    text-align: right;
+}
+.play-title p{
+    margin-top: 20px;
+}
+.play-img-container{
+    width: 40%;
+    position: relative;
+}
+.play-img-container img{
+    width: 100%;
+}
+.play-over-img{
+    position: absolute;
+    width: 200px !important;
+    bottom: -50px;
+    left: -100px;
+}
+/* play part css end */
 
 
 /* Responsive CSS start */
@@ -322,7 +355,8 @@ font-size: 4.5rem;
 @media screen and (max-width: 576px) {
     .nav-container,
     .menu-box ul,
-    .banner-container
+    .banner-container,
+    .play-container
     {
         flex-direction: column;
     }
@@ -377,9 +411,25 @@ font-size: 4.5rem;
     .game-content{
         width: 80%;
         margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
 
-    align-items: center;
-    text-align: center;
+    .play-container{
+        justify-content: center;
+        gap: 20px;
+    }
+    .play-title{
+        width: 80%;
+        text-align: center;
+    }
+    .play-img-container{
+        width: 65%;
+    }
+    .play-over-img{
+        width: 130px !important;
+        bottom: -50px;
+        left: -50px;
     }
 }
 
@@ -444,6 +494,22 @@ font-size: 4.5rem;
 
     align-items: center;
     text-align: center;
+    }
+
+    .play-container{
+        gap: 70px;
+    }
+    .play-title{
+        width: 40%;
+    }
+    .play-img-container{
+        width: 40%;
+        margin-right: auto;
+    }
+    .play-over-img{
+        width: 160px !important;
+        bottom: -50px;
+        left: -50px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
