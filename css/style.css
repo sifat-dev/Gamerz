@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --primary-color: #3C354F;
+    --primary-font: 'Work Sans', sans-serif;
+    --linear-color: #ff73bc;
+    --title-color-black: #0B0223;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,11 +22,7 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --primary-color: #3C354F;
-    --primary-font: 'Work Sans', sans-serif;
-    --linear-color: #ff73bc;
-}
+.btn
 
 
 
@@ -90,6 +93,65 @@ nav {
 
 .menu-box ul li a:last-child img {
     width: 1rem;
+}
+/* Nav part css end */
+
+/* Banner part css start */
+
+.banner-section{
+    background: url(../images/Group\ 14.png) no-repeat left top;
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 20px; */
+}
+.banner-content h2{
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 2.2rem;
+    color: var(--title-color-black);
+    font-weight: 600;
+}
+.banner-content h2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 800;
+font-size: 4.5rem;
+}
+.banner-img{
+    text-align: right;
+}
+.banner-img img{
+    width: 80%;
+}
+.banner-content ul li{
+    list-style: none;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+.banner-content ul li i{
+    margin-right: 5px;
+}
+.banner-content ul li:first-child i{
+    border-radius: 50%;
+    padding: 5px 7px;
+    margin-left: -5px;
+    color: var(--linear-color);
+    border: 2px solid var(--primary-color);
+}
+.banner-content ul li:nth-child(2) i{
+    color: var(--linear-color);
 }
 
 
