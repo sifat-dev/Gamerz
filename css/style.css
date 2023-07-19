@@ -320,7 +320,9 @@ font-size: 4.5rem;
 /* online css end */
 
 /* play part css start */
-
+.play-section{
+    padding: 50px 0;
+}
 .play-container{
     display: flex;
     justify-content: right;
@@ -349,6 +351,56 @@ font-size: 4.5rem;
 }
 /* play part css end */
 
+/* carrer part css start */
+.career-section{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.career-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.career-content{
+    width: 65%;
+}
+.career-content h2{
+    font-size: 2.3rem;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    color: #fff;
+}
+.career-content p{
+    font-size: 0.9rem;
+    font-family: var(--primary-font);
+    color: #fff;
+    font-weight: 400;
+}
+.career-list-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.career-list-box ul li{
+    list-style: none;
+    color: #fff;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.career-list2{
+    text-align: right;
+}
+.carrer-btn{
+    background: #fff;
+    color: var(--linear-color);
+}
+.career-img-box img{
+    width: 100%;
+}
+
+/* carrer part css end */
+
 
 /* Responsive CSS start */
 
@@ -356,7 +408,8 @@ font-size: 4.5rem;
     .nav-container,
     .menu-box ul,
     .banner-container,
-    .play-container
+    .play-container,
+    .career-container
     {
         flex-direction: column;
     }
@@ -431,11 +484,19 @@ font-size: 4.5rem;
         bottom: -50px;
         left: -50px;
     }
+    .career-section{
+        margin-top: 50px;
+    }
+    .career-content{
+        padding: 50px 0;
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .nav-container,
-    .menu-box ul
+    .menu-box ul,
+    .career-container
     {
         flex-direction: column;
     }
@@ -510,6 +571,13 @@ font-size: 4.5rem;
         width: 160px !important;
         bottom: -50px;
         left: -50px;
+    }
+    .career-section{
+        margin-top: 50px;
+    }
+    .career-content{
+        padding: 50px 0;
+        width: 90%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
