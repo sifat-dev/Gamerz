@@ -491,6 +491,7 @@ footer{
 }
 footer small{
     font-family: var(--primary-font);
+    opacity: 0.5;
 }
 
 /* footer part css end */
@@ -585,6 +586,26 @@ footer small{
         padding: 50px 0;
         width: 90%;
     }
+    footer{
+        padding: 40px 0;
+    }
+    .footer-menu{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .social-menu{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .terms-nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-menu ul, 
+    .terms-nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -672,6 +693,18 @@ footer small{
     .career-content{
         padding: 50px 0;
         width: 90%;
+    }
+    .footer-menu{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .social-menu{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .terms-nav{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
