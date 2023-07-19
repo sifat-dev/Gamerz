@@ -115,8 +115,9 @@ nav {
     background: url(../images/Group\ 14.png) no-repeat left top;
 }
 .banner-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
 }
 .banner-content{
     display: flex;
@@ -143,7 +144,7 @@ font-size: 4.5rem;
     text-align: right;
 }
 .banner-img img{
-    width: 80%;
+    width: 70%;
 }
 .banner-content ul li{
     list-style: none;
@@ -185,13 +186,42 @@ font-size: 4.5rem;
 
 @media screen and (max-width: 576px) {
     .nav-container,
-    .menu-box ul
+    .menu-box ul,
+    .banner-container
     {
         flex-direction: column;
     }
     .menu-box ul{
         gap: 15px;
         margin-top: 15px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-img,
+    .banner-content 
+    {
+        text-align: center;
+    }
+    .banner-section{
+        background: none;
+    }
+    .banner-content{
+        background: url(../images/Group\ 14.png) no-repeat left top;
+        background-size: cover;
+        padding: 20px 30px;
+        margin-top: 30px;
+    } 
+    .banner-content h2{
+        font-size: 1.2rem;
+    }
+    .banner-content h2 span{
+        font-size: 2.5rem;
+    }
+    .banner-content ul li{
+        font-size: 1rem;
     }
 }
 
@@ -205,7 +235,37 @@ font-size: 4.5rem;
         gap: 15px;
         margin-top: 15px;
     }
-    
+    .banner-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-img,
+    .banner-content 
+    {
+        text-align: center;
+    }
+    .banner-section{
+        background: none;
+    }
+    .banner-content{
+        background: url(../images/Group\ 14.png) no-repeat left top;
+        background-size: cover;
+        padding: 20px 80px;
+        margin-top: 30px;
+    } 
+    .banner-content h2{
+        font-size: 1.2rem;
+    }
+    .banner-content h2 span{
+        font-size: 2.5rem;
+    }
+    .banner-content ul li{
+        font-size: 1rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .container{
