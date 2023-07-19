@@ -34,7 +34,24 @@ a {
     margin-top: 20px;
     font-size: 1.1rem;
     border-radius: 48px;
-background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.sec-title h3{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-family: var(--primary-font);
+    color: var(--title-color-black);
+    font-weight: 700;
+}
+.sec-title h3 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sec-title p{
+    font-size: 1rem;
+    font-family: var(--primary-font);
 }
 
 
@@ -178,6 +195,44 @@ font-size: 4.5rem;
 .banner-btn2:hover {
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     cursor: pointer;
+}
+/* banner part css end */
+
+/* online part css start */
+.online-section{
+    padding: 70px 0;
+}
+.online-title{
+    text-align: center;
+}
+.online-img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+.online-img-box img{
+    width: 100%;
+}
+.online-img{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.online-img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #0000005b;
+    text-transform: capitalize;
+}
+.online-img-box p{
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
 }
 
 
